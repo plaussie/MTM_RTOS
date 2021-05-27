@@ -12,14 +12,14 @@ void Delay(unsigned int uiMiliSec) {
 void Led0Blink( void *pvParameters ){
 	while(1){
 	LedToggle(0);
-	Delay(2000);
+	vTaskDelay(2000);
 	}
 }
 
 void Led1Blink( void *pvParameters ){
 	while(1){
 	LedToggle(1);
-	Delay(100);
+	vTaskDelay(100);
 	}
 }
 
