@@ -1,4 +1,6 @@
 #include <lpc21xx.h>
+#include "FreeRTOS.h"
+#include "task.h"
 #include "led.h"
 
 void Delay(unsigned int uiMiliSec) {
@@ -7,18 +9,15 @@ void Delay(unsigned int uiMiliSec) {
 	for(uiLoopCtr=0;uiLoopCtr<uiDelayLoopCount;uiLoopCtr++) {}
 }
 
-int main( void ){
-	char Counter = 0;
-	LedInit();
-	
+void Led0Blink( void *pvParameters ){
 	while(1){
-		if(!(Counter%4)){
-			LedToggle(0);
-		}
-		if(!(Counter%3)){
-			LedToggle(1);
-		}
-		Delay(83);
-		Counter++;
+	LedToggle(0);
+	Delay(500);
 	}
+}
+int main(void){
+	LedInit();
+	xTaskCreate(Led0Blink, NULL , 100 , NULL, 2 , NULL );
+	vTaskStartScheduler();
+	while(1);
 }
