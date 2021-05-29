@@ -29,6 +29,7 @@ void LedStep(eDirectionState){
 void LedToggle(unsigned char ucLedIndeks){
 		
 		if (ucLedIndeks == 0){
+			IO1CLR= Led1_bm | Led2_bm | Led3_bm;
 			if(IO1PIN&Led0_bm){
 				IO1CLR=Led0_bm;
 			}
@@ -37,6 +38,7 @@ void LedToggle(unsigned char ucLedIndeks){
 			}
 		}
 		else if(ucLedIndeks == 1){
+			IO1CLR= Led0_bm | Led2_bm | Led3_bm;
 			if(IO1PIN&Led1_bm){
 				IO1CLR=Led1_bm;
 			}
@@ -45,6 +47,7 @@ void LedToggle(unsigned char ucLedIndeks){
 			}
 		}
 		else if(ucLedIndeks == 2){
+			IO1CLR= Led0_bm | Led1_bm | Led3_bm;
 			if(IO1PIN&Led2_bm){
 				IO1CLR=Led2_bm;
 			}
@@ -53,6 +56,7 @@ void LedToggle(unsigned char ucLedIndeks){
 			}
 		}
 		else if(ucLedIndeks == 3){
+			IO1CLR= Led0_bm | Led1_bm | Led2_bm;
 			if(IO1PIN&Led3_bm){
 				IO1CLR=Led3_bm;
 			}
