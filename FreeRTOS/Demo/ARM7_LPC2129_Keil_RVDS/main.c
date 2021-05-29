@@ -9,29 +9,28 @@ void Delay(unsigned int uiMiliSec) {
 	for(uiLoopCtr=0;uiLoopCtr<uiDelayLoopCount;uiLoopCtr++) {}
 }
 
-void Led0Blink( void *pvParameters ){
-	
-	unsigned char ucFreq = *((unsigned char*)pvParameters);
+void LedBlink(void *pvParameters){
 	
 	while(1){
 		LedToggle(0);
-		vTaskDelay((1000/ucFreq)/2);
+		vTaskDelay((1000/(*((unsigned char*)pvParameters)))/2);
 	}
 }
 
-void Led1Blink( void *pvParameters ){
+void LedCtrl(void *pvParameters){
 	while(1){
-		LedToggle(1);
-		Delay(500);
+		*((unsigned char*)pvParameters) = *((unsigned char*)pvParameters) + 1;
+		vTaskDelay(1000);
 	}
 }
 
 int main(void){
 	
-	unsigned char ucBlinkingFreq = 10;
+	unsigned char ucBlinkingFreq = 1;
 	
 	LedInit();
-	xTaskCreate(Led0Blink, NULL , 100 , &ucBlinkingFreq, 2 , NULL );
+	xTaskCreate(LedBlink, NULL , 100 , &ucBlinkingFreq, 2 , NULL );
+	xTaskCreate(LedCtrl, NULL , 100 , &ucBlinkingFreq, 2 , NULL );
 	vTaskStartScheduler();
 	while(1);
 }
