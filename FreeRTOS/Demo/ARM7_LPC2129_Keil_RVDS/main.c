@@ -12,23 +12,21 @@ void Delay(unsigned int uiMiliSec) {
 void Led0Blink( void *pvParameters ){
 	while(1){
 	LedToggle(0);
-	vTaskDelay(1000);
-	LedToggle(0);
-	Delay(1000);
+	Delay(500);
 	}
 }
 
 void Led1Blink( void *pvParameters ){
 	while(1){
 	LedToggle(1);
-	vTaskDelay(100);
+	Delay(500);
 	}
 }
 
 int main(void){
 	LedInit();
 	xTaskCreate(Led1Blink, NULL , 100 , NULL, 2 , NULL );
-	xTaskCreate(Led0Blink, NULL , 100 , NULL, 1 , NULL );
+	xTaskCreate(Led0Blink, NULL , 100 , NULL, 2 , NULL );
 	vTaskStartScheduler();
 	while(1);
 }
