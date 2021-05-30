@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\bin\RTOSDemo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\bin\RTOSDemo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Sun May 30 15:09:21 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Sun May 30 21:21:45 2021
 <BR><P>
 <H3>Maximum Stack Usage =        144 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -42,9 +42,9 @@ Function Pointers
  <LI><a href="#[8]">FIQ_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[7]">IRQ_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[5]">PAbt_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
- <LI><a href="#[c]">PulseTrigger_1000ms</a> from main.o(.text) referenced from main.o(.text)
- <LI><a href="#[d]">PulseTrigger_333ms</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[d]">PulseTrigger_1000ms</a> from main.o(.text) referenced from main.o(.text)
  <LI><a href="#[b]">Pulse_LED0</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[c]">Pulse_LED1</a> from main.o(.text) referenced from main.o(.text)
  <LI><a href="#[2]">Reset_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[3]">Undef_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[12]">__main</a> from __main.o(!!!main) referenced from startup.o(RESET)
@@ -200,18 +200,20 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
 </UL>
-<P><STRONG><a name="[c]"></a>PulseTrigger_1000ms</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 92 + Unknown Stack Size
-<LI>Call Chain = PulseTrigger_1000ms &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+<P><STRONG><a name="[c]"></a>Pulse_LED1</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84 + Unknown Stack Size
+<LI>Call Chain = Pulse_LED1 &rArr; xQueueSemaphoreTake &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
 <LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOn
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedOff
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
 </UL>
-<P><STRONG><a name="[d]"></a>PulseTrigger_333ms</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, main.o(.text))
+<P><STRONG><a name="[d]"></a>PulseTrigger_1000ms</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92 + Unknown Stack Size
-<LI>Call Chain = PulseTrigger_333ms &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+<LI>Call Chain = PulseTrigger_1000ms &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
@@ -237,6 +239,7 @@ Global Symbols
 <P><STRONG><a name="[22]"></a>LedOn</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, led.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStepLeft
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedStepRight
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED1
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED0
 </UL>
 
@@ -260,7 +263,8 @@ Global Symbols
 <P><STRONG><a name="[9a]"></a>LedToggle</STRONG> (Thumb, 164 bytes, Stack size 0 bytes, led.o(.text), UNUSED)
 
 <P><STRONG><a name="[24]"></a>LedOff</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, led.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED0
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED1
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED0
 </UL>
 
 <P><STRONG><a name="[28]"></a>xTaskCreate</STRONG> (Thumb, 96 bytes, Stack size 56 bytes, tasks.o(.text))
@@ -348,8 +352,8 @@ Global Symbols
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PulseTrigger_333ms
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PulseTrigger_1000ms
+<BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PulseTrigger_1000ms
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED1
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED0
 </UL>
 
@@ -637,8 +641,7 @@ Global Symbols
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PulseTrigger_333ms
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PulseTrigger_1000ms
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PulseTrigger_1000ms
 </UL>
 
 <P><STRONG><a name="[65]"></a>xQueueGenericSendFromISR</STRONG> (Thumb, 124 bytes, Stack size 56 bytes, queue.o(.text), UNUSED)
@@ -681,7 +684,8 @@ Global Symbols
 <LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED0
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED1
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pulse_LED0
 </UL>
 
 <P><STRONG><a name="[6a]"></a>xQueuePeek</STRONG> (Thumb, 234 bytes, Stack size 48 bytes, queue.o(.text), UNUSED)
