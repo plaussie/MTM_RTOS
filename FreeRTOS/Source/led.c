@@ -84,7 +84,6 @@ void LedOn(unsigned char ucLedIndeks){
 		IO1CLR=Led0_bm | Led1_bm | Led2_bm | Led3_bm;
 		
 		if (ucLedIndeks == 0){
-			
 			IO1SET=Led0_bm;
 		}
 		else if(ucLedIndeks == 1){
@@ -95,6 +94,22 @@ void LedOn(unsigned char ucLedIndeks){
 		}
 		else if(ucLedIndeks == 3){
 			IO1SET=Led3_bm;
+		}
+}
+
+void LedOff(unsigned char ucLedIndeks){
+
+		if (ucLedIndeks == 0){	
+			IO1CLR=Led0_bm;
+		}
+		else if(ucLedIndeks == 1){
+			IO1CLR=Led1_bm;
+		}
+		else if(ucLedIndeks == 2){
+			IO1CLR=Led2_bm;
+		}
+		else if(ucLedIndeks == 3){
+			IO1CLR=Led3_bm;
 		}
 }
 	
