@@ -179,3 +179,416 @@ linking...
 Program Size: Code=10008 RO-data=32 RW-data=100 ZI-data=8028  
 FromELF: creating hex file...
 ".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(25): warning:  #223-D: function "AppendString" declared implicitly
+main.c(50): warning:  #1-D: last line of file ends without a newline
+compiling string.c...
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(25): warning:  #223-D: function "AppendString" declared implicitly
+main.c(49): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(25): error:  #165: too few arguments in function call
+main.c(49): warning:  #1-D: last line of file ends without a newline
+compiling string.c...
+compiling uart.c...
+".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
+Target not created
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(25): error:  #165: too few arguments in function call
+main.c(49): warning:  #1-D: last line of file ends without a newline
+".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
+Target not created
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(25): error:  #165: too few arguments in function call
+".\bin\RTOSDemo.axf" - 1 Errors, 6 Warning(s).
+Target not created
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(25): error:  #165: too few arguments in function call
+".\bin\RTOSDemo.axf" - 1 Errors, 6 Warning(s).
+Target not created
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10052 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10052 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10052 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10052 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10048 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10040 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10040 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10040 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10040 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10044 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10044 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10052 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10052 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10056 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10056 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10056 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10056 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10064 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10064 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10064 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10064 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10064 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10064 RO-data=52 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10068 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10068 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10068 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10068 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10068 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10068 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10064 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10064 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10056 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10056 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=10056 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 6 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=10056 RO-data=32 RW-data=100 ZI-data=8028  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).

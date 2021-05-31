@@ -1,49 +1,57 @@
 #include <lpc21xx.h>
 #include "FreeRTOS.h"
 #include "task.h"
+#include "queue.h"
 #include "semphr.h"
 #include "led.h"
 #include "uart.h"
 #include "string.h"
 #include "keyboard.h"
 
-xSemaphoreHandle xSemaphore;
+#define QUEUE_SIZE 5
+#define ITEM_SIZE 25
 
-void Rtos_Transmiter_SendString(char pcString[]){
-	xSemaphoreTake(xSemaphore,portMAX_DELAY);	
-	Transmiter_SendString(pcString);
-	while(Transmiter_GetStatus()!=FREE){};
-	xSemaphoreGive(xSemaphore);
+QueueHandle_t xQueue;
+
+void Rtos_Transmiter_SendString(void *pvParameters){
+	char pcStringTx[ITEM_SIZE];
+	while(1){
+		xQueueReceive(xQueue, &pcStringTx, 0);
+		Transmiter_SendString(pcStringTx);
+		while(Transmiter_GetStatus()!=FREE){};
+	}
 }
 
 void LettersTx (void *pvParameters){
 	TickType_t StartTime, Duration = 0;
-	char pcStringTx[20];
+	char pcStringTx[ITEM_SIZE];
 	while(1){
 		CopyString("-ABCDEEFGH-", pcStringTx);
-		AppendUIntToString(Duration,pcStringTx);
+		AppendUIntToString(Duration, pcStringTx);
 		AppendString("\n", pcStringTx);
 		StartTime = xTaskGetTickCount();
-		Rtos_Transmiter_SendString(pcStringTx);
+		xQueueSend(xQueue, &pcStringTx, 0);
 		Duration = xTaskGetTickCount() - StartTime;
 		vTaskDelay(300);
 	}
 }
 
 void KeyboardTx (void *pvParameters){
+	char pcStringTx[] = "-Keyboard-\n";
 	while(1){
 		if(eKeyboardRead() != RELASED){
-			Rtos_Transmiter_SendString("-Keyboard-\n");
+			xQueueSend(xQueue, &pcStringTx, 0);
 		}
 	}
 }
 
 int main( void ){
-	KeyboardInit();
 	UART_InitWithInt(300);
-	vSemaphoreCreateBinary(xSemaphore);
+	KeyboardInit();
+	xQueue = xQueueCreate(QUEUE_SIZE, ITEM_SIZE);
 	xTaskCreate(LettersTx, NULL, 128, NULL, 1, NULL);
 	xTaskCreate(KeyboardTx, NULL, 128, NULL, 1, NULL);
+	xTaskCreate(Rtos_Transmiter_SendString, NULL, 128, NULL, 1, NULL);
 	vTaskStartScheduler();
 	while(1);
 }
