@@ -9,12 +9,16 @@
 
 xSemaphoreHandle xSemaphore;
 
+void Rtos_Transmiter_SendString(char pcString[]){
+	xSemaphoreTake(xSemaphore,portMAX_DELAY);	
+	Transmiter_SendString(pcString);
+	while(Transmiter_GetStatus()!=FREE){};
+	xSemaphoreGive(xSemaphore);
+}
+
 void LettersTx (void *pvParameters){
 	while(1){
-		xSemaphoreTake(xSemaphore,portMAX_DELAY);
-		Transmiter_SendString("-ABCDEEFGH-\n");
-		while(Transmiter_GetStatus()!=FREE){};
-		xSemaphoreGive(xSemaphore);
+		Rtos_Transmiter_SendString("-ABCDEEFGH-\n");
 		vTaskDelay(300);
 	}
 }
@@ -22,10 +26,7 @@ void LettersTx (void *pvParameters){
 void KeyboardTx (void *pvParameters){
 	while(1){
 		if(eKeyboardRead() != RELASED){
-			xSemaphoreTake(xSemaphore,portMAX_DELAY);
-			Transmiter_SendString("-Keyboard-\n");
-			while(Transmiter_GetStatus()!=FREE){};
-			xSemaphoreGive(xSemaphore);
+			Rtos_Transmiter_SendString("-Keyboard-\n");
 		}
 	}
 }
