@@ -3,42 +3,20 @@
 #include "task.h"
 #include "semphr.h"
 #include "led.h"
+#include "uart.h"
+#include "string.h"
 
-xSemaphoreHandle xSemaphore;
-
-void Pulse_LED0(void *pvParameters){
+void LettersTx (void *pvParameters){
 	while(1){
-		xSemaphoreTake(xSemaphore,portMAX_DELAY);
-		LedOn(0);
-		vTaskDelay(100);
-		LedOff(0);
+		Transmiter_SendString("-ABCDEEFGH-\n");
+		while(Transmiter_GetStatus()!=FREE){};
+		vTaskDelay(300);
 	}
 }
 
-void Pulse_LED1(void *pvParameters){
-	while(1){
-		xSemaphoreTake(xSemaphore,portMAX_DELAY);
-		LedOn(1);
-		vTaskDelay(100);
-		LedOff(1);
-	}
-}
-
-void PulseTrigger_1000ms(void *pvParameters){
-	
-	while(1){
-		vTaskDelay(1000);
-		xSemaphoreGive(xSemaphore);
-	}
-}
-
-int main(void){ 
-	
-	vSemaphoreCreateBinary(xSemaphore);
-	LedInit();
-	xTaskCreate(Pulse_LED0, NULL , 100 , NULL, 2 , NULL);
-	xTaskCreate(Pulse_LED1, NULL , 100 , NULL, 2 , NULL);
-	xTaskCreate(PulseTrigger_1000ms, NULL , 100 , NULL, 2 , NULL);
+int main( void ){
+	UART_InitWithInt(9600);
+	xTaskCreate(LettersTx, NULL, 128, NULL, 1, NULL);
 	vTaskStartScheduler();
 	while(1);
 }

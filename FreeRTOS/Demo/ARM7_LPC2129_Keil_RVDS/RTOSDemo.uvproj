@@ -412,6 +412,26 @@
               <FileType>1</FileType>
               <FilePath>..\..\Source\led.c</FilePath>
             </File>
+            <File>
+              <FileName>string.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\string.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>string.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\string.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\uart.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -856,6 +876,26 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Source\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>string.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\string.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>string.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\string.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\uart.h</FilePath>
             </File>
           </Files>
         </Group>
