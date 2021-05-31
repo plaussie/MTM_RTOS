@@ -103,8 +103,8 @@ enum Result eHexStringToUInt(char pcStr[], unsigned int *puiValue){
 
 void AppendUIntToString(unsigned int uiValue, char pcDestinationStr[]){
 	
-	unsigned char ucIndeksKonca;
+	unsigned char ucEndPointer;
 
-	for(ucIndeksKonca=0; pcDestinationStr[ucIndeksKonca]!=NULL; ucIndeksKonca++){}
-	UIntToHexStr(uiValue, &pcDestinationStr[ucIndeksKonca]);
+	for(ucEndPointer = 0; pcDestinationStr[ucEndPointer] != NULL; ucEndPointer++){}
+	UIntToHexStr(uiValue, &pcDestinationStr[ucEndPointer]);
 }

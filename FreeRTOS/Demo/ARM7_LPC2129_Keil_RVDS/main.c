@@ -17,8 +17,15 @@ void Rtos_Transmiter_SendString(char pcString[]){
 }
 
 void LettersTx (void *pvParameters){
+	TickType_t StartTime, Duration = 0;
+	char pcStringTx[20];
 	while(1){
-		Rtos_Transmiter_SendString("-ABCDEEFGH-\n");
+		CopyString("-ABCDEEFGH-", pcStringTx);
+		AppendUIntToString(Duration,pcStringTx);
+		AppendString("\n", pcStringTx);
+		StartTime = xTaskGetTickCount();
+		Rtos_Transmiter_SendString(pcStringTx);
+		Duration = xTaskGetTickCount() - StartTime;
 		vTaskDelay(300);
 	}
 }
