@@ -30,7 +30,9 @@ void LettersTx (void *pvParameters){
 		AppendUIntToString(Duration, pcStringTx);
 		AppendString("\n", pcStringTx);
 		StartTime = xTaskGetTickCount();
-		xQueueSend(xQueue, &pcStringTx, 0);
+		if(xQueueSend(xQueue, &pcStringTx, 0) != pdTRUE){
+			LedToggle(0);
+		}
 		Duration = xTaskGetTickCount() - StartTime;
 		vTaskDelay(300);
 	}
@@ -48,6 +50,7 @@ void KeyboardTx (void *pvParameters){
 int main( void ){
 	UART_InitWithInt(300);
 	KeyboardInit();
+	LedInit();
 	xQueue = xQueueCreate(QUEUE_SIZE, ITEM_SIZE);
 	xTaskCreate(LettersTx, NULL, 128, NULL, 1, NULL);
 	xTaskCreate(KeyboardTx, NULL, 128, NULL, 1, NULL);
