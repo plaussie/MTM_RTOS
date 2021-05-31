@@ -4,57 +4,39 @@
 #include "queue.h"
 #include "semphr.h"
 #include "led.h"
-#include "uart.h"
+#include "servo.h"
 #include "string.h"
 #include "keyboard.h"
 
-#define QUEUE_SIZE 5
-#define ITEM_SIZE 25
-
-QueueHandle_t xQueue;
-
-void Rtos_Transmiter_SendString(void *pvParameters){
-	char pcStringTx[ITEM_SIZE];
+void Keyboard(void *pvParameters){
+	
+	enum KeyboardState ePreviousState, eCurrentState = RELASED;
+	
 	while(1){
-		xQueueReceive(xQueue, &pcStringTx, 0);
-		Transmiter_SendString(pcStringTx);
-		while(Transmiter_GetStatus()!=FREE){};
-	}
-}
-
-void LettersTx (void *pvParameters){
-	TickType_t StartTime, Duration = 0;
-	char pcStringTx[ITEM_SIZE];
-	while(1){
-		CopyString("-ABCDEEFGH-", pcStringTx);
-		AppendUIntToString(Duration, pcStringTx);
-		AppendString("\n", pcStringTx);
-		StartTime = xTaskGetTickCount();
-		if(xQueueSend(xQueue, &pcStringTx, 0) != pdTRUE){
-			LedToggle(0);
-		}
-		Duration = xTaskGetTickCount() - StartTime;
-		vTaskDelay(300);
-	}
-}
-
-void KeyboardTx (void *pvParameters){
-	char pcStringTx[] = "-Keyboard-\n";
-	while(1){
-		if(eKeyboardRead() != RELASED){
-			xQueueSend(xQueue, &pcStringTx, 0);
+		ePreviousState = eCurrentState;
+		eCurrentState = eKeyboardRead();
+		if(ePreviousState != eCurrentState){
+			switch(eCurrentState){
+				case BUTTON_0: ServoCallib();
+					break;
+				case BUTTON_1: ServoGoTo(50);
+					break;
+				case BUTTON_2: ServoGoTo(100);
+					break;
+				case BUTTON_3: ServoGoTo(150);
+					break;
+				default:
+					break;
+			}
+			vTaskDelay(100);
 		}
 	}
 }
 
 int main( void ){
-	UART_InitWithInt(300);
 	KeyboardInit();
-	LedInit();
-	xQueue = xQueueCreate(QUEUE_SIZE, ITEM_SIZE);
-	xTaskCreate(LettersTx, NULL, 128, NULL, 1, NULL);
-	xTaskCreate(KeyboardTx, NULL, 128, NULL, 1, NULL);
-	xTaskCreate(Rtos_Transmiter_SendString, NULL, 128, NULL, 1, NULL);
+	ServoInit(100);
+	xTaskCreate(Keyboard, NULL, 128, NULL, 1, NULL);
 	vTaskStartScheduler();
 	while(1);
 }

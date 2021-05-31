@@ -1,5 +1,4 @@
 #include <LPC21xx.H>
-
 #include "timer_interrupts.h"
 #include "led.h"
 #include "servo.h"
@@ -21,7 +20,6 @@ enum DetectorState eReadDetector(){
 }
 
 void ServoCallib(void){
-	while(sServo.eState != IDLE){};
 	sServo.eState=CALLIB;
 }
 
@@ -30,7 +28,7 @@ void Automat(void){
 	
 				switch(sServo.eState){
 					case CALLIB:
-						if (eReadDetector()==INACTIVE){
+						if(eReadDetector()==INACTIVE){
 							LedStepRight();
 							sServo.eState=CALLIB;
 						}
@@ -64,18 +62,16 @@ void Automat(void){
 							sServo.eState=IDLE;
 						}
 			}
-		}
+}
 		
 		
 void ServoInit(unsigned int uiServoFrequency){
 	LedInit();
 	DetectorInit();
 	ServoCallib();
-	Timer0Interrupts_Init((10000000/uiServoFrequency), &Automat);
+	Timer1Interrupts_Init((10000000/uiServoFrequency), &Automat);
 }
 
 void ServoGoTo(unsigned int uiPosition){
-	sServo.uiDesiredPosition =  uiPosition;
-	while(sServo.eState != IDLE){};
-	sServo.eState = IN_PROGRESS;
+	sServo.uiDesiredPosition=uiPosition;
 }
