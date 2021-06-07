@@ -34,7 +34,7 @@ void Keyboard(void *pvParameters){
 }
 
 int main( void ){
-	TickType_t ServoPeriod = 10;
+	TickType_t ServoPeriod = 5;
 	KeyboardInit();
 	ServoInit();
 	xTaskCreate(Keyboard, NULL, 128, NULL, 2, NULL);
