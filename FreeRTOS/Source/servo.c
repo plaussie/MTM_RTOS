@@ -10,8 +10,6 @@
 
 QueueHandle_t QueueServoParameters;
 
-struct Servo sServo;
-
 void DetectorInit(void){
 	IO0DIR = IO0DIR & (~DETECTOR_bm);
 }
@@ -24,7 +22,7 @@ enum DetectorState eReadDetector(){
 }
 
 void ServoCallib(void){
-	struct Servo sServo = {CALLIB, 0, 0};
+	struct ServoControl sServo = {CALLIB_COM, 0, 0};
 	xQueueSend(QueueServoParameters, &sServo, 0);
 }
 
@@ -45,10 +43,22 @@ void Automat(void){
 						break;
 					case IDLE:
 						if(sServo.uiDesiredPosition==sServo.uiCurrentPosition){
-							struct Servo sServoReceiveParams;
+							struct ServoControl sServoReceiveParams;
 							if(pdTRUE == xQueueReceive(QueueServoParameters, &sServoReceiveParams, 0)){
-								sServo.eState = sServoReceiveParams.eState;
-								sServo.uiDesiredPosition = sServoReceiveParams.uiDesiredPosition;
+								switch(sServoReceiveParams.eCommand){
+									case CALLIB_COM:
+										sServo.eState = CALLIB;
+										break;
+									case GOTO:
+										sServo.eState = IDLE;
+										sServo.uiDesiredPosition = sServoReceiveParams.uiDesiredPosition;
+										break;
+									case WAIT:
+										vTaskDelay(sServoReceiveParams.uiNumberOfTicks);
+										break;
+									default:
+										break;
+								}
 							}
 							else{
 								sServo.eState=IDLE;
@@ -78,11 +88,11 @@ void Automat(void){
 void ServoInit(){
 	LedInit();
 	DetectorInit();
-	QueueServoParameters = xQueueCreate(20, sizeof(struct Servo));
+	QueueServoParameters = xQueueCreate(20, sizeof(struct ServoControl));
 }
 
 void ServoGoTo(unsigned int uiPosition){
-	struct Servo sServo = {IDLE, 0, 0};
+	struct ServoControl sServo = {GOTO, 0, 0};
 	sServo.uiDesiredPosition=uiPosition;
 	xQueueSend(QueueServoParameters, &sServo, 0);
 }
@@ -92,4 +102,10 @@ void ServoRun(void *pvParameters){
 		Automat();
 		vTaskDelay(*((TickType_t*)pvParameters));
 	}
+}
+
+void ServoWait(unsigned int uiNumberOfTicks){
+	struct ServoControl sServo = {WAIT, 0, 0};
+	sServo.uiNumberOfTicks = uiNumberOfTicks;
+	xQueueSend(QueueServoParameters, &sServo, 0);
 }
