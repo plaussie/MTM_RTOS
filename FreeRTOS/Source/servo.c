@@ -2,7 +2,6 @@
 #include "timer_interrupts.h"
 #include "led.h"
 #include "servo.h"
-#include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
 
@@ -22,12 +21,13 @@ enum DetectorState eReadDetector(){
 }
 
 void ServoCallib(void){
-	struct ServoControl sServo = {CALLIB_COM, 0, 0};
+	struct ServoControl sServo = {CALLIB_COM, 0, 0, 0};
 	xQueueSend(QueueServoParameters, &sServo, 0);
 }
 
 void Automat(void){
 				static struct Servo sServo = {CALLIB, 0, 0};
+				static TickType_t ServoSpeed = 50;
 				switch(sServo.eState){
 					case CALLIB:
 						if(eReadDetector()==INACTIVE){
@@ -44,24 +44,23 @@ void Automat(void){
 					case IDLE:
 						if(sServo.uiDesiredPosition==sServo.uiCurrentPosition){
 							struct ServoControl sServoReceiveParams;
-							if(pdTRUE == xQueueReceive(QueueServoParameters, &sServoReceiveParams, 0)){
-								switch(sServoReceiveParams.eCommand){
-									case CALLIB_COM:
-										sServo.eState = CALLIB;
-										break;
-									case GOTO:
-										sServo.eState = IDLE;
-										sServo.uiDesiredPosition = sServoReceiveParams.uiDesiredPosition;
-										break;
-									case WAIT:
-										vTaskDelay(sServoReceiveParams.uiNumberOfTicks);
-										break;
-									default:
-										break;
-								}
-							}
-							else{
-								sServo.eState=IDLE;
+							xQueueReceive(QueueServoParameters, &sServoReceiveParams, portMAX_DELAY);
+							switch(sServoReceiveParams.eCommand){
+								case CALLIB_COM:
+									sServo.eState = CALLIB;
+									break;
+								case GOTO:
+									sServo.eState = IDLE;
+									sServo.uiDesiredPosition = sServoReceiveParams.uiDesiredPosition;
+									break;
+								case WAIT:
+									vTaskDelay(sServoReceiveParams.ttNumberOfTicks);
+									break;
+								case SPEED:
+									ServoSpeed = sServoReceiveParams.ttSpeed;
+									break;
+								default:
+									break;
 							}
 						}
 						else{
@@ -83,6 +82,7 @@ void Automat(void){
 							sServo.eState=IDLE;
 						}
 			}
+			vTaskDelay(ServoSpeed);
 }
 		
 void ServoInit(){
@@ -92,7 +92,7 @@ void ServoInit(){
 }
 
 void ServoGoTo(unsigned int uiPosition){
-	struct ServoControl sServo = {GOTO, 0, 0};
+	struct ServoControl sServo = {GOTO, 0, 0, 0};
 	sServo.uiDesiredPosition=uiPosition;
 	xQueueSend(QueueServoParameters, &sServo, 0);
 }
@@ -104,8 +104,14 @@ void ServoRun(void *pvParameters){
 	}
 }
 
-void ServoWait(unsigned int uiNumberOfTicks){
-	struct ServoControl sServo = {WAIT, 0, 0};
-	sServo.uiNumberOfTicks = uiNumberOfTicks;
+void ServoWait(TickType_t ttNumberOfTicks){
+	struct ServoControl sServo = {WAIT, 0, 0, 0};
+	sServo.ttNumberOfTicks = ttNumberOfTicks;
+	xQueueSend(QueueServoParameters, &sServo, 0);
+}
+
+void ServoSpeed(TickType_t ttSpeedTick){
+	struct ServoControl sServo = {SPEED, 0, 0, 0};
+	sServo.ttSpeed = ttSpeedTick;
 	xQueueSend(QueueServoParameters, &sServo, 0);
 }
