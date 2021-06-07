@@ -4,8 +4,11 @@
 #include "servo.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "queue.h"
 
 #define DETECTOR_bm (1<<10)
+
+QueueHandle_t QueueServoParameters;
 
 struct Servo sServo;
 
@@ -21,11 +24,12 @@ enum DetectorState eReadDetector(){
 }
 
 void ServoCallib(void){
-	sServo.eState=CALLIB;
+	struct Servo sServo = {CALLIB, 0, 0};
+	xQueueSend(QueueServoParameters, &sServo, 0);
 }
 
 void Automat(void){
-	
+				static struct Servo sServo = {CALLIB, 0, 0};
 				switch(sServo.eState){
 					case CALLIB:
 						if(eReadDetector()==INACTIVE){
@@ -41,7 +45,14 @@ void Automat(void){
 						break;
 					case IDLE:
 						if(sServo.uiDesiredPosition==sServo.uiCurrentPosition){
-							sServo.eState=IDLE;
+							struct Servo sServoReceiveParams;
+							if(pdTRUE == xQueueReceive(QueueServoParameters, &sServoReceiveParams, 0)){
+								sServo.eState = sServoReceiveParams.eState;
+								sServo.uiDesiredPosition = sServoReceiveParams.uiDesiredPosition;
+							}
+							else{
+								sServo.eState=IDLE;
+							}
 						}
 						else{
 							sServo.eState=IN_PROGRESS;
@@ -67,11 +78,13 @@ void Automat(void){
 void ServoInit(){
 	LedInit();
 	DetectorInit();
-	sServo.eState=CALLIB;
+	QueueServoParameters = xQueueCreate(20, sizeof(struct Servo));
 }
 
 void ServoGoTo(unsigned int uiPosition){
+	struct Servo sServo = {IDLE, 0, 0};
 	sServo.uiDesiredPosition=uiPosition;
+	xQueueSend(QueueServoParameters, &sServo, 0);
 }
 
 void ServoRun(void *pvParameters){
