@@ -11,7 +11,6 @@ void DetectorInit(void){
 	IO0DIR = IO0DIR & (~DETECTOR_bm);
 }
 
-
 enum DetectorState eReadDetector(){
 	if((IO0PIN&DETECTOR_bm)==0){
 		return ACTIVE;
@@ -22,7 +21,6 @@ enum DetectorState eReadDetector(){
 void ServoCallib(void){
 	sServo.eState=CALLIB;
 }
-
 
 void Automat(void){
 	
@@ -64,14 +62,14 @@ void Automat(void){
 			}
 }
 		
-		
 void ServoInit(unsigned int uiServoFrequency){
 	LedInit();
 	DetectorInit();
-	ServoCallib();
+	sServo.eState=CALLIB;
 	Timer1Interrupts_Init((10000000/uiServoFrequency), &Automat);
 }
 
 void ServoGoTo(unsigned int uiPosition){
 	sServo.uiDesiredPosition=uiPosition;
 }
+

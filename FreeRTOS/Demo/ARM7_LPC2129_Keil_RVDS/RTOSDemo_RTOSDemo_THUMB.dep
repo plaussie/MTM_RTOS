@@ -1,6 +1,6 @@
 Dependencies for Project 'RTOSDemo', Target 'RTOSDemo_THUMB': (DO NOT MODIFY !)
 F (.\Startup.s)(0x608ADF44)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I..\..\Source\portable\RVDS\ARM7_LPC21xx-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"--list .\startup.lst --xref -o .\bin\startup.o --depend .\bin\startup.d)
-F (.\main.c)(0x60B50DA8)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\main.o --omf_browse .\bin\main.crf --depend .\bin\main.d)
+F (.\main.c)(0x60B61EAA)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\main.o --omf_browse .\bin\main.crf --depend .\bin\main.d)
 I (C:\Program Files\ARM\Inc\Philips\lpc21xx.h)(0x51C81BAC)
 I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\FreeRTOS.h)(0x608AE172)
 I (C:\Program Files\ARM\ARMCC\include\stddef.h)(0x51C819B4)
@@ -15,30 +15,46 @@ I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowani
 I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\list.h)(0x608AE172)
 I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\queue.h)(0x608AE172)
 I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\semphr.h)(0x608AE172)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\led.h)(0x60B38A30)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\uart.h)(0x60B3F034)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\string.h)(0x60B4F596)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\led.h)(0x60B61C4A)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\servo.h)(0x5CF6FFE6)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\string.h)(0x60B61C4A)
 I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\keyboard.h)(0x5CF6FFE2)
-F (..\..\Source\include\led.h)(0x60B38A30)()
-F (..\..\Source\led.c)(0x60B38A2E)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\led.o --omf_browse .\bin\led.crf --depend .\bin\led.d)
+F (..\..\Source\include\led.h)(0x60B61C4A)()
+F (..\..\Source\led.c)(0x60B61C4A)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\led.o --omf_browse .\bin\led.crf --depend .\bin\led.d)
 I (C:\Program Files\ARM\Inc\Philips\LPC21xx.H)(0x51C81BAC)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\led.h)(0x60B38A30)
-F (..\..\Source\string.c)(0x60B4F2E2)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\string.o --omf_browse .\bin\string.crf --depend .\bin\string.d)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\string.h)(0x60B4F596)
-F (..\..\Source\uart.c)(0x60B4E2E7)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\uart.o --omf_browse .\bin\uart.crf --depend .\bin\uart.d)
-I (C:\Program Files\ARM\Inc\Philips\LPC210X.H)(0x51C81BAC)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\uart.h)(0x60B3F034)
-I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\string.h)(0x60B4F596)
-F (..\..\Source\include\string.h)(0x60B4F596)()
-F (..\..\Source\include\uart.h)(0x60B3F034)()
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\led.h)(0x60B61C4A)
+F (..\..\Source\string.c)(0x60B61C4A)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\string.o --omf_browse .\bin\string.crf --depend .\bin\string.d)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\string.h)(0x60B61C4A)
+F (..\..\Source\include\string.h)(0x60B61C4A)()
+F (..\..\Source\servo.c)(0x60B61EAA)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\servo.o --omf_browse .\bin\servo.crf --depend .\bin\servo.d)
+I (C:\Program Files\ARM\Inc\Philips\LPC21xx.H)(0x51C81BAC)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\timer_interrupts.h)(0x60B61EAA)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\led.h)(0x60B61C4A)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\servo.h)(0x5CF6FFE6)
+F (..\..\Source\include\servo.h)(0x5CF6FFE6)()
+F (..\..\Source\include\keyboard.h)(0x5CF6FFE2)()
 F (..\..\Source\keyboard.c)(0x5CF6FFE0)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\keyboard.o --omf_browse .\bin\keyboard.crf --depend .\bin\keyboard.d)
 I (C:\Program Files\ARM\Inc\Philips\LPC21xx.H)(0x51C81BAC)
 I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\keyboard.h)(0x5CF6FFE2)
-F (..\..\Source\include\keyboard.h)(0x5CF6FFE2)()
-F (..\..\Source\servo.c)(0x5D02ACAB)()
-F (..\..\Source\include\servo.h)(0x5CF6FFE6)()
-F (..\..\Source\timer_interrupts.c)(0x5CF6FFE8)()
-F (..\..\Source\include\timer_interrupts.h)(0x5CF6FFEA)()
+F (..\..\Source\timers.c)(0x608AE172)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\timers.o --omf_browse .\bin\timers.crf --depend .\bin\timers.d)
+I (C:\Program Files\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\FreeRTOS.h)(0x608AE172)
+I (C:\Program Files\ARM\ARMCC\include\stddef.h)(0x51C819B4)
+I (C:\Program Files\ARM\ARMCC\include\stdint.h)(0x51C819B4)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Demo\ARM7_LPC2129_Keil_RVDS\FreeRTOSConfig.h)(0x60B2390E)
+I (C:\Program Files\ARM\Inc\Philips\lpc21xx.h)(0x51C81BAC)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\projdefs.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\portable.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\deprecated_definitions.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\mpu_wrappers.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\task.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\list.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\queue.h)(0x608AE172)
+I (C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Source\include\timers.h)(0x608AE172)
+F (..\..\Source\include\timers.h)(0x608AE172)()
+F (..\..\Source\include\timer_interrupts.h)(0x60B61EAA)()
+F (..\..\Source\timer_interrupts.c)(0x60B61EAA)()
 F (..\..\Source\tasks.c)(0x608AE172)(--thumb -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I. -I..\..\Source\portable\RVDS\ARM7_LPC21xx -I..\Common\include -I..\..\Source\include-I "C:\Program Files\ARM\RV31\INC"-I "C:\Program Files\ARM\CMSIS\Include"-I "C:\Program Files\ARM\Inc\Philips"-DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o .\bin\tasks.o --omf_browse .\bin\tasks.crf --depend .\bin\tasks.d)
 I (C:\Program Files\ARM\ARMCC\include\stdlib.h)(0x51C819B4)
 I (C:\Program Files\ARM\ARMCC\include\string.h)(0x51C819B4)

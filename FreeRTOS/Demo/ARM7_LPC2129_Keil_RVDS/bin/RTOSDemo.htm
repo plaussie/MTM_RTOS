@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\bin\RTOSDemo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\bin\RTOSDemo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Mon May 31 19:34:40 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Mon Jun 07 17:40:00 2021
 <BR><P>
 <H3>Maximum Stack Usage =        144 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -248,14 +248,6 @@ Global Symbols
 
 <P><STRONG><a name="[92]"></a>LedOff</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, led.o(.text), UNUSED)
 
-<P><STRONG><a name="[23]"></a>eKeyboardRead</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, keyboard.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Keyboard
-</UL>
-
-<P><STRONG><a name="[27]"></a>KeyboardInit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, keyboard.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
 <P><STRONG><a name="[31]"></a>DetectorInit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, servo.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ServoInit
 </UL>
@@ -265,8 +257,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[24]"></a>ServoCallib</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, servo.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ServoInit
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Keyboard
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Keyboard
 </UL>
 
 <P><STRONG><a name="[d]"></a>Automat</STRONG> (Thumb, 164 bytes, Stack size 8 bytes, servo.o(.text))
@@ -278,7 +269,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> servo.o(.text)
 </UL>
-<P><STRONG><a name="[28]"></a>ServoInit</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, servo.o(.text))
+<P><STRONG><a name="[28]"></a>ServoInit</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, servo.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = ServoInit
 </UL>
@@ -286,13 +277,20 @@ Global Symbols
 <LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer1Interrupts_Init
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DetectorInit
 <LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedInit
-<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ServoCallib
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[25]"></a>ServoGoTo</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, servo.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Keyboard
+</UL>
+
+<P><STRONG><a name="[23]"></a>eKeyboardRead</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, keyboard.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Keyboard
+</UL>
+
+<P><STRONG><a name="[27]"></a>KeyboardInit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, keyboard.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[e]"></a>Timer0IRQHandler</STRONG> (ARM, 48 bytes, Stack size 24 bytes, timer_interrupts.o(.text))
