@@ -2,6 +2,8 @@
 #include "timer_interrupts.h"
 #include "led.h"
 #include "servo.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 #define DETECTOR_bm (1<<10)
 
@@ -62,14 +64,19 @@ void Automat(void){
 			}
 }
 		
-void ServoInit(unsigned int uiServoFrequency){
+void ServoInit(){
 	LedInit();
 	DetectorInit();
 	sServo.eState=CALLIB;
-	Timer1Interrupts_Init((10000000/uiServoFrequency), &Automat);
 }
 
 void ServoGoTo(unsigned int uiPosition){
 	sServo.uiDesiredPosition=uiPosition;
 }
 
+void ServoRun(void *pvParameters){
+	while(1){
+		Automat();
+		vTaskDelay(*((TickType_t*)pvParameters));
+	}
+}

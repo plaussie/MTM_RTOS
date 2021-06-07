@@ -12,5 +12,6 @@ struct Servo
 
 void Automat(void);
 void ServoCallib(void);
-void ServoInit(unsigned int uiServoFrequency);
+void ServoInit();
 void ServoGoTo(unsigned int uiPosition);
+void ServoRun(void *pvParameters);
