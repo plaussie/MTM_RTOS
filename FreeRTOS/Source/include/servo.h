@@ -21,7 +21,7 @@ struct ServoControl{
 
 void Automat(void);
 void ServoCallib(void);
-void ServoInit();
+void ServoInit(TickType_t ServoPeriod);
 void ServoGoTo(unsigned int uiPosition);
 void ServoRun(void *pvParameters);
 void ServoWait(TickType_t ttNumberOfTicks);

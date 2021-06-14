@@ -432,6 +432,26 @@
               <FileType>5</FileType>
               <FilePath>..\..\Source\include\uart.h</FilePath>
             </File>
+            <File>
+              <FileName>servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\keyboard.h</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\keyboard.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -896,6 +916,26 @@
               <FileName>uart.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Source\include\uart.h</FilePath>
+            </File>
+            <File>
+              <FileName>servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Source\include\keyboard.h</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Source\keyboard.c</FilePath>
             </File>
           </Files>
         </Group>

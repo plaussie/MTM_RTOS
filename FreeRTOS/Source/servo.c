@@ -27,6 +27,7 @@ void ServoCallib(void){
 
 void Automat(void){
 				static struct Servo sServo = {CALLIB, 0, 0};
+				struct ServoControl sServoReceiveParams;
 				static TickType_t ServoSpeed = 50;
 				switch(sServo.eState){
 					case CALLIB:
@@ -42,30 +43,26 @@ void Automat(void){
 						}
 						break;
 					case IDLE:
-						if(sServo.uiDesiredPosition==sServo.uiCurrentPosition){
-							struct ServoControl sServoReceiveParams;
 							xQueueReceive(QueueServoParameters, &sServoReceiveParams, portMAX_DELAY);
 							switch(sServoReceiveParams.eCommand){
 								case CALLIB_COM:
 									sServo.eState = CALLIB;
 									break;
 								case GOTO:
-									sServo.eState = IDLE;
+									sServo.eState = IN_PROGRESS;
 									sServo.uiDesiredPosition = sServoReceiveParams.uiDesiredPosition;
 									break;
 								case WAIT:
+									sServo.eState = IDLE;
 									vTaskDelay(sServoReceiveParams.ttNumberOfTicks);
 									break;
 								case SPEED:
+									sServo.eState = IDLE;
 									ServoSpeed = sServoReceiveParams.ttSpeed;
 									break;
 								default:
 									break;
 							}
-						}
-						else{
-							sServo.eState=IN_PROGRESS;
-						}
 						break;
 					case IN_PROGRESS:
 						if(sServo.uiDesiredPosition<sServo.uiCurrentPosition){
@@ -85,10 +82,11 @@ void Automat(void){
 			vTaskDelay(ServoSpeed);
 }
 		
-void ServoInit(){
+void ServoInit(TickType_t ServoPeriod){
 	LedInit();
 	DetectorInit();
 	QueueServoParameters = xQueueCreate(20, sizeof(struct ServoControl));
+	xTaskCreate(ServoRun, NULL, 128, &ServoPeriod, 2, NULL);
 }
 
 void ServoGoTo(unsigned int uiPosition){

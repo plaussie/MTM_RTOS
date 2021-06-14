@@ -4,16 +4,132 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 C:\Users\dzial\Documents\Mikroelektronika_AGH\III_rok\VI_semestr\Projektowanie Systemów Wbudowanych\RTOS\MTM_RTOS\FreeRTOS\Demo\ARM7_LPC2129_Keil_RVDS\RTOSDemo.uvproj
-Project File Date:  06/01/2021
+Project File Date:  06/14/2021
 
 <h2>Output:</h2>
+Build target 'RTOSDemo_THUMB'
+compiling servo.c...
+..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\servo.h(24): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
+linking...
+.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol KeyboardInit (referred from main.o).
+.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol eKeyboardRead (referred from main.o).
+".\bin\RTOSDemo.axf" - 2 Errors, 9 Warning(s).
+Target not created
+Build target 'RTOSDemo_THUMB'
+compiling servo.c...
+..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\servo.h(24): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
+compiling keyboard.c...
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=9588 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 11 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=9588 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
 Build target 'RTOSDemo_THUMB'
 compiling main.c...
 ..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
 ..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
 ..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
 ..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\servo.h(24): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+main.c(45): warning:  #177-D: variable "ServoPeriod" was declared but never referenced
+compiling servo.c...
+..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\servo.h(24): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
+linking...
+Program Size: Code=9580 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 18 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=9580 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\servo.h(24): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+linking...
+Program Size: Code=9576 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=9576 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Build target 'RTOSDemo_THUMB'
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
+..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
+compiling servo.c...
+..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
+..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
+linking...
+Program Size: Code=9592 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 15 Warning(s).
+Build target 'RTOSDemo_THUMB'
+linking...
+Program Size: Code=9592 RO-data=80 RW-data=104 ZI-data=8000  
+FromELF: creating hex file...
+".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
+Rebuild target 'RTOSDemo_THUMB'
+assembling Startup.s...
+compiling main.c...
+..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
+..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
+..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
+..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
 ..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
 ..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
 compiling led.c...
@@ -33,73 +149,7 @@ compiling servo.c...
 ..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
 ..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
 ..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(77): warning:  #1-D: last line of file ends without a newline
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol KeyboardInit (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol eKeyboardRead (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 3 Errors, 22 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(77): warning:  #1-D: last line of file ends without a newline
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol KeyboardInit (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol eKeyboardRead (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 3 Errors, 9 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol KeyboardInit (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol eKeyboardRead (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 3 Errors, 0 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol KeyboardInit (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol eKeyboardRead (referred from main.o).
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 3 Errors, 0 Warning(s).
-Target not created
-Rebuild target 'RTOSDemo_THUMB'
-assembling Startup.s...
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling led.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\led.c(18): warning:  #1294-D: Old-style function LedStep
-..\..\Source\led.c(115): warning:  #1-D: last line of file ends without a newline
-compiling string.c...
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(77): warning:  #1-D: last line of file ends without a newline
+..\..\Source\include\servo.h(5): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
 compiling keyboard.c...
 ..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
 ..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
@@ -110,640 +160,16 @@ compiling port.c...
 compiling heap_2.c...
 assembling portASM.s...
 linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 1 Errors, 24 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling keyboard.c...
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 1 Errors, 2 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling timers.c...
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 1 Errors, 0 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling timers.c...
-linking...
-.\bin\RTOSDemo.axf: Error: L6218E: Undefined symbol Timer1Interrupts_Init (referred from servo.o).
-".\bin\RTOSDemo.axf" - 1 Errors, 0 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling timer_interrupts.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=7648 RO-data=32 RW-data=104 ZI-data=8000  
+Program Size: Code=9584 RO-data=80 RW-data=104 ZI-data=8000  
 FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 4 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling timer_interrupts.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=7648 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 4 Warning(s).
+".\bin\RTOSDemo.axf" - 0 Errors, 23 Warning(s).
 Build target 'RTOSDemo_THUMB'
 linking...
-Program Size: Code=7648 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-linking...
-Program Size: Code=7648 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=7648 RO-data=32 RW-data=104 ZI-data=8000  
+Program Size: Code=9584 RO-data=80 RW-data=104 ZI-data=8000  
 FromELF: creating hex file...
 ".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
 Build target 'RTOSDemo_THUMB'
 linking...
-Program Size: Code=7648 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-linking...
-Program Size: Code=7652 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=7652 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(40): error:  #20: identifier "ServoRun" is undefined
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(83): warning:  #1-D: last line of file ends without a newline
-".\bin\RTOSDemo.axf" - 1 Errors, 16 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(40): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(83): warning:  #1-D: last line of file ends without a newline
-".\bin\RTOSDemo.axf" - 1 Errors, 16 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Rebuild target 'RTOSDemo_THUMB'
-assembling Startup.s...
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-compiling led.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\led.c(18): warning:  #1294-D: Old-style function LedStep
-..\..\Source\led.c(115): warning:  #1-D: last line of file ends without a newline
-compiling string.c...
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(83): warning:  #1-D: last line of file ends without a newline
-compiling keyboard.c...
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling timers.c...
-compiling timer_interrupts.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-compiling tasks.c...
-compiling list.c...
-compiling queue.c...
-compiling port.c...
-compiling heap_2.c...
-assembling portASM.s...
-".\bin\RTOSDemo.axf" - 1 Errors, 28 Warning(s).
-Target not created
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-"main.c" - 1 Errors, 7 Warning(s).
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-"main.c" - 1 Errors, 7 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-main.c(41): error:  #20: identifier "ServoRun" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 7 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(83): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=7696 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 16 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=7696 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-linking...
-Program Size: Code=7696 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 7 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=7696 RO-data=32 RW-data=104 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(82): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=6972 RO-data=32 RW-data=96 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 9 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=6972 RO-data=32 RW-data=96 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\servo.c(67): error:  #147-D: declaration is incompatible with "void ServoInit(unsigned int)" (declared at line 15 of "..\..\Source\include\servo.h")
-..\..\Source\servo.c(82): warning:  #1-D: last line of file ends without a newline
-".\bin\RTOSDemo.axf" - 1 Errors, 9 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\servo.c(82): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=6968 RO-data=32 RW-data=96 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 18 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=6968 RO-data=32 RW-data=96 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-linking...
-Program Size: Code=6968 RO-data=32 RW-data=96 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=6968 RO-data=32 RW-data=96 ZI-data=8000  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\servo.c(96): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=9416 RO-data=44 RW-data=100 ZI-data=8012  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 10 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=9416 RO-data=44 RW-data=100 ZI-data=8012  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\servo.c(95): warning:  #1-D: last line of file ends without a newline
-linking...
-Program Size: Code=9416 RO-data=44 RW-data=100 ZI-data=8012  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 10 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=9416 RO-data=44 RW-data=100 ZI-data=8012  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-linking...
-Program Size: Code=9444 RO-data=44 RW-data=100 ZI-data=8012  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=9444 RO-data=44 RW-data=100 ZI-data=8012  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\servo.h(18): error:  #20: identifier "TickType_t" is undefined
-..\..\Source\servo.c(99): warning:  #1-D: last line of file ends without a newline
-".\bin\RTOSDemo.axf" - 1 Errors, 18 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\servo.h(18): error:  #20: identifier "TickType_t" is undefined
-..\..\Source\servo.c(99): warning:  #1-D: last line of file ends without a newline
-".\bin\RTOSDemo.axf" - 1 Errors, 10 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\servo.h(18): error:  #20: identifier "TickType_t" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 9 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(15): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\servo.h(18): error:  #20: identifier "TickType_t" is undefined
-".\bin\RTOSDemo.axf" - 1 Errors, 9 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(21): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(21): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\servo.c(30): error:  #146: too many initializer values
-".\bin\RTOSDemo.axf" - 1 Errors, 17 Warning(s).
-Target not created
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(21): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-compiling servo.c...
-..\..\Source\include\timer_interrupts.h(1): warning:  #1295-D: Deprecated declaration Timer0IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(2): warning:  #1295-D: Deprecated declaration Timer1IRQHandler - give arg types
-..\..\Source\include\timer_interrupts.h(4): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(21): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-linking...
-Program Size: Code=9516 RO-data=56 RW-data=100 ZI-data=8004  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 17 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=9516 RO-data=56 RW-data=100 ZI-data=8004  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
-Build target 'RTOSDemo_THUMB'
-compiling main.c...
-..\..\Source\include\led.h(1): warning:  #1295-D: Deprecated declaration LedInit - give arg types
-..\..\Source\include\led.h(2): warning:  #1295-D: Deprecated declaration LedStepLeft - give arg types
-..\..\Source\include\led.h(3): warning:  #1295-D: Deprecated declaration LedStepRight - give arg types
-..\..\Source\include\led.h(7): warning:  #1-D: last line of file ends without a newline
-..\..\Source\include\servo.h(3): warning:  #1295-D: Deprecated declaration eReadDetector - give arg types
-..\..\Source\include\servo.h(21): warning:  #1295-D: Deprecated declaration ServoInit - give arg types
-..\..\Source\include\keyboard.h(2): warning:  #1295-D: Deprecated declaration eKeyboardRead - give arg types
-..\..\Source\include\keyboard.h(3): warning:  #1295-D: Deprecated declaration KeyboardInit - give arg types
-linking...
-Program Size: Code=9536 RO-data=56 RW-data=100 ZI-data=8004  
-FromELF: creating hex file...
-".\bin\RTOSDemo.axf" - 0 Errors, 8 Warning(s).
-Build target 'RTOSDemo_THUMB'
-linking...
-Program Size: Code=9536 RO-data=56 RW-data=100 ZI-data=8004  
+Program Size: Code=9584 RO-data=80 RW-data=104 ZI-data=8000  
 FromELF: creating hex file...
 ".\bin\RTOSDemo.axf" - 0 Errors, 0 Warning(s).
